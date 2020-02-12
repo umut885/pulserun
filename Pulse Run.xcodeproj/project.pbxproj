@@ -1,0 +1,754 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		446A916A78B6867AB5971B1B /* Pods_Pulse_Run_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AFA536F0C6DD3986BF1532B /* Pods_Pulse_Run_WatchKit_App.framework */; };
+		45831FE86FBA13077C472BA0 /* Pods_Pulse_Run_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11CBBC26D2B8FBD8813C27C0 /* Pods_Pulse_Run_WatchKit_Extension.framework */; };
+		A91121F523B95104008D313F /* manualHMaxInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91121F423B95104008D313F /* manualHMaxInterfaceController.swift */; };
+		A9472C9623B8CCFD00B01F1F /* noHMaxInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9472C9523B8CCFD00B01F1F /* noHMaxInterfaceController.swift */; };
+		A9501EE923ABB188003098F8 /* Pulse Run WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A9501EE823ABB188003098F8 /* Pulse Run WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A9501EEF23ABB188003098F8 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9501EED23ABB188003098F8 /* Interface.storyboard */; };
+		A9501EF123ABB18A003098F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9501EF023ABB18A003098F8 /* Assets.xcassets */; };
+		A9501EF823ABB18A003098F8 /* Pulse Run WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A9501EF723ABB18A003098F8 /* Pulse Run WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A9501EFD23ABB18A003098F8 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9501EFC23ABB18A003098F8 /* InterfaceController.swift */; };
+		A9501EFF23ABB18A003098F8 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9501EFE23ABB18A003098F8 /* ExtensionDelegate.swift */; };
+		A9501F0123ABB18A003098F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9501F0023ABB18A003098F8 /* Assets.xcassets */; };
+		A987D28A23B8D83A00452E7F /* runInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A987D28923B8D83A00452E7F /* runInterfaceController.swift */; };
+		A9D19B1223AD10FD00B5C35C /* chooseInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D19B1123AD10FD00B5C35C /* chooseInterfaceController.swift */; };
+		A9D19B1423AD28CC00B5C35C /* roughHMaxInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D19B1323AD28CC00B5C35C /* roughHMaxInterfaceController.swift */; };
+		A9D19B1623AE620C00B5C35C /* preciseInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D19B1523AE620C00B5C35C /* preciseInterfaceController.swift */; };
+		A9D19B1923AE6B2C00B5C35C /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D19B1823AE6B2C00B5C35C /* HealthKit.framework */; };
+		A9D3FD4023BA469900650361 /* HMaxDescriptionInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D3FD3F23BA469900650361 /* HMaxDescriptionInterfaceController.swift */; };
+		A9D3FD4223BA560D00650361 /* settingsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D3FD4123BA560D00650361 /* settingsInterfaceController.swift */; };
+		A9D3FD4423C10BB500650361 /* statisticsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D3FD4323C10BB500650361 /* statisticsInterfaceController.swift */; };
+		F9FF01900777AB7780B22312 /* Pods_Pulse_Run.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2FE6E0474EEEE70677F0628 /* Pods_Pulse_Run.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A9501EEA23ABB188003098F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9501EDE23ABB188003098F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9501EE723ABB188003098F8;
+			remoteInfo = "Pulse Run WatchKit App";
+		};
+		A9501EF923ABB18A003098F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9501EDE23ABB188003098F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9501EF623ABB18A003098F8;
+			remoteInfo = "Pulse Run WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A9501F0823ABB18A003098F8 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A9501EF823ABB18A003098F8 /* Pulse Run WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9501F0C23ABB18A003098F8 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				A9501EE923ABB188003098F8 /* Pulse Run WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		11CBBC26D2B8FBD8813C27C0 /* Pods_Pulse_Run_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pulse_Run_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D601FD3CCBC87924D7A10A4 /* Pods-Pulse Run.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pulse Run.release.xcconfig"; path = "Target Support Files/Pods-Pulse Run/Pods-Pulse Run.release.xcconfig"; sourceTree = "<group>"; };
+		208D5043C0020ED887C7AB3E /* Pods-Pulse Run WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pulse Run WatchKit Extension.debug.xcconfig"; path = "Target Support Files/Pods-Pulse Run WatchKit Extension/Pods-Pulse Run WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		2AFA536F0C6DD3986BF1532B /* Pods_Pulse_Run_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pulse_Run_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E80A0B5E70CE32A3539B58A /* Pods-Pulse Run.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pulse Run.debug.xcconfig"; path = "Target Support Files/Pods-Pulse Run/Pods-Pulse Run.debug.xcconfig"; sourceTree = "<group>"; };
+		A91121F423B95104008D313F /* manualHMaxInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = manualHMaxInterfaceController.swift; sourceTree = "<group>"; };
+		A9472C9523B8CCFD00B01F1F /* noHMaxInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = noHMaxInterfaceController.swift; sourceTree = "<group>"; };
+		A9501EE423ABB188003098F8 /* Pulse Run.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pulse Run.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9501EE823ABB188003098F8 /* Pulse Run WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pulse Run WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9501EEE23ABB188003098F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		A9501EF023ABB18A003098F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A9501EF223ABB18A003098F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9501EF723ABB18A003098F8 /* Pulse Run WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Pulse Run WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9501EFC23ABB18A003098F8 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		A9501EFE23ABB18A003098F8 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		A9501F0023ABB18A003098F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A9501F0223ABB18A003098F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A987D28923B8D83A00452E7F /* runInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = runInterfaceController.swift; sourceTree = "<group>"; };
+		A9D19B1123AD10FD00B5C35C /* chooseInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chooseInterfaceController.swift; sourceTree = "<group>"; };
+		A9D19B1323AD28CC00B5C35C /* roughHMaxInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = roughHMaxInterfaceController.swift; sourceTree = "<group>"; };
+		A9D19B1523AE620C00B5C35C /* preciseInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = preciseInterfaceController.swift; sourceTree = "<group>"; };
+		A9D19B1723AE6B2C00B5C35C /* Pulse Run WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Pulse Run WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		A9D19B1823AE6B2C00B5C35C /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS6.1.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		A9D3FD3F23BA469900650361 /* HMaxDescriptionInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMaxDescriptionInterfaceController.swift; sourceTree = "<group>"; };
+		A9D3FD4123BA560D00650361 /* settingsInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingsInterfaceController.swift; sourceTree = "<group>"; };
+		A9D3FD4323C10BB500650361 /* statisticsInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = statisticsInterfaceController.swift; sourceTree = "<group>"; };
+		A9D800DD23D0F69C002C50E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2FE6E0474EEEE70677F0628 /* Pods_Pulse_Run.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pulse_Run.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B477E91DF0EB33519966EB15 /* Pods-Pulse Run WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pulse Run WatchKit App.debug.xcconfig"; path = "Target Support Files/Pods-Pulse Run WatchKit App/Pods-Pulse Run WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+		CBE886D12CC0DCB769C2856F /* Pods-Pulse Run WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pulse Run WatchKit App.release.xcconfig"; path = "Target Support Files/Pods-Pulse Run WatchKit App/Pods-Pulse Run WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		E5D134838828348F9062CA66 /* Pods-Pulse Run WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pulse Run WatchKit Extension.release.xcconfig"; path = "Target Support Files/Pods-Pulse Run WatchKit Extension/Pods-Pulse Run WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1AD9AF0EA5147B35BE8CF68A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9FF01900777AB7780B22312 /* Pods_Pulse_Run.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9501EF423ABB18A003098F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45831FE86FBA13077C472BA0 /* Pods_Pulse_Run_WatchKit_Extension.framework in Frameworks */,
+				A9D19B1923AE6B2C00B5C35C /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB4EA36C2F73688D18F1DE7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				446A916A78B6867AB5971B1B /* Pods_Pulse_Run_WatchKit_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5F7BED481B7DD1707FAD49C8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2E80A0B5E70CE32A3539B58A /* Pods-Pulse Run.debug.xcconfig */,
+				1D601FD3CCBC87924D7A10A4 /* Pods-Pulse Run.release.xcconfig */,
+				B477E91DF0EB33519966EB15 /* Pods-Pulse Run WatchKit App.debug.xcconfig */,
+				CBE886D12CC0DCB769C2856F /* Pods-Pulse Run WatchKit App.release.xcconfig */,
+				208D5043C0020ED887C7AB3E /* Pods-Pulse Run WatchKit Extension.debug.xcconfig */,
+				E5D134838828348F9062CA66 /* Pods-Pulse Run WatchKit Extension.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A9501EDD23ABB188003098F8 = {
+			isa = PBXGroup;
+			children = (
+				A9D800DD23D0F69C002C50E6 /* Info.plist */,
+				A9501EEC23ABB188003098F8 /* Pulse Run WatchKit App */,
+				A9501EFB23ABB18A003098F8 /* Pulse Run WatchKit Extension */,
+				A9501EE523ABB188003098F8 /* Products */,
+				5F7BED481B7DD1707FAD49C8 /* Pods */,
+				C7A27765820B46A9035E0B0E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A9501EE523ABB188003098F8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A9501EE423ABB188003098F8 /* Pulse Run.app */,
+				A9501EE823ABB188003098F8 /* Pulse Run WatchKit App.app */,
+				A9501EF723ABB18A003098F8 /* Pulse Run WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A9501EEC23ABB188003098F8 /* Pulse Run WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				A9501EED23ABB188003098F8 /* Interface.storyboard */,
+				A9501EF023ABB18A003098F8 /* Assets.xcassets */,
+				A9501EF223ABB18A003098F8 /* Info.plist */,
+			);
+			path = "Pulse Run WatchKit App";
+			sourceTree = "<group>";
+		};
+		A9501EFB23ABB18A003098F8 /* Pulse Run WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A9D3FD4323C10BB500650361 /* statisticsInterfaceController.swift */,
+				A91121F423B95104008D313F /* manualHMaxInterfaceController.swift */,
+				A9D3FD3F23BA469900650361 /* HMaxDescriptionInterfaceController.swift */,
+				A987D28923B8D83A00452E7F /* runInterfaceController.swift */,
+				A9D3FD4123BA560D00650361 /* settingsInterfaceController.swift */,
+				A9472C9523B8CCFD00B01F1F /* noHMaxInterfaceController.swift */,
+				A9D19B1723AE6B2C00B5C35C /* Pulse Run WatchKit Extension.entitlements */,
+				A9D19B1523AE620C00B5C35C /* preciseInterfaceController.swift */,
+				A9D19B1123AD10FD00B5C35C /* chooseInterfaceController.swift */,
+				A9D19B1323AD28CC00B5C35C /* roughHMaxInterfaceController.swift */,
+				A9501EFC23ABB18A003098F8 /* InterfaceController.swift */,
+				A9501EFE23ABB18A003098F8 /* ExtensionDelegate.swift */,
+				A9501F0023ABB18A003098F8 /* Assets.xcassets */,
+				A9501F0223ABB18A003098F8 /* Info.plist */,
+			);
+			path = "Pulse Run WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		C7A27765820B46A9035E0B0E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A9D19B1823AE6B2C00B5C35C /* HealthKit.framework */,
+				B2FE6E0474EEEE70677F0628 /* Pods_Pulse_Run.framework */,
+				2AFA536F0C6DD3986BF1532B /* Pods_Pulse_Run_WatchKit_App.framework */,
+				11CBBC26D2B8FBD8813C27C0 /* Pods_Pulse_Run_WatchKit_Extension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A9501EE323ABB188003098F8 /* Pulse Run */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9501F0D23ABB18A003098F8 /* Build configuration list for PBXNativeTarget "Pulse Run" */;
+			buildPhases = (
+				6988330D72A0292928F75380 /* [CP] Check Pods Manifest.lock */,
+				A9501EE223ABB188003098F8 /* Resources */,
+				A9501F0C23ABB18A003098F8 /* Embed Watch Content */,
+				1AD9AF0EA5147B35BE8CF68A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A9501EEB23ABB188003098F8 /* PBXTargetDependency */,
+			);
+			name = "Pulse Run";
+			productName = "Pulse Run";
+			productReference = A9501EE423ABB188003098F8 /* Pulse Run.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		A9501EE723ABB188003098F8 /* Pulse Run WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9501F0923ABB18A003098F8 /* Build configuration list for PBXNativeTarget "Pulse Run WatchKit App" */;
+			buildPhases = (
+				E48C200A2E49B947FCF7E46F /* [CP] Check Pods Manifest.lock */,
+				A9501EE623ABB188003098F8 /* Resources */,
+				A9501F0823ABB18A003098F8 /* Embed App Extensions */,
+				EB4EA36C2F73688D18F1DE7F /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A9501EFA23ABB18A003098F8 /* PBXTargetDependency */,
+			);
+			name = "Pulse Run WatchKit App";
+			productName = "Pulse Run WatchKit App";
+			productReference = A9501EE823ABB188003098F8 /* Pulse Run WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		A9501EF623ABB18A003098F8 /* Pulse Run WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9501F0523ABB18A003098F8 /* Build configuration list for PBXNativeTarget "Pulse Run WatchKit Extension" */;
+			buildPhases = (
+				C775EE6199EF27A0466F3541 /* [CP] Check Pods Manifest.lock */,
+				A9501EF323ABB18A003098F8 /* Sources */,
+				A9501EF423ABB18A003098F8 /* Frameworks */,
+				A9501EF523ABB18A003098F8 /* Resources */,
+				B29673829EDB3641AB598D3F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pulse Run WatchKit Extension";
+			productName = "Pulse Run WatchKit Extension";
+			productReference = A9501EF723ABB18A003098F8 /* Pulse Run WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A9501EDE23ABB188003098F8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Umut Ozdemir";
+				TargetAttributes = {
+					A9501EE323ABB188003098F8 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					A9501EE723ABB188003098F8 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					A9501EF623ABB18A003098F8 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = A9501EE123ABB188003098F8 /* Build configuration list for PBXProject "Pulse Run" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A9501EDD23ABB188003098F8;
+			productRefGroup = A9501EE523ABB188003098F8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A9501EE323ABB188003098F8 /* Pulse Run */,
+				A9501EE723ABB188003098F8 /* Pulse Run WatchKit App */,
+				A9501EF623ABB18A003098F8 /* Pulse Run WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A9501EE223ABB188003098F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9501EE623ABB188003098F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9501EF123ABB18A003098F8 /* Assets.xcassets in Resources */,
+				A9501EEF23ABB188003098F8 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9501EF523ABB18A003098F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9501F0123ABB18A003098F8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6988330D72A0292928F75380 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pulse Run-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B29673829EDB3641AB598D3F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pulse Run WatchKit Extension/Pods-Pulse Run WatchKit Extension-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pulse Run WatchKit Extension/Pods-Pulse Run WatchKit Extension-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Pulse Run WatchKit Extension/Pods-Pulse Run WatchKit Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C775EE6199EF27A0466F3541 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pulse Run WatchKit Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E48C200A2E49B947FCF7E46F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pulse Run WatchKit App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A9501EF323ABB18A003098F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9472C9623B8CCFD00B01F1F /* noHMaxInterfaceController.swift in Sources */,
+				A9501EFF23ABB18A003098F8 /* ExtensionDelegate.swift in Sources */,
+				A9D3FD4223BA560D00650361 /* settingsInterfaceController.swift in Sources */,
+				A9D19B1623AE620C00B5C35C /* preciseInterfaceController.swift in Sources */,
+				A9D19B1423AD28CC00B5C35C /* roughHMaxInterfaceController.swift in Sources */,
+				A987D28A23B8D83A00452E7F /* runInterfaceController.swift in Sources */,
+				A9501EFD23ABB18A003098F8 /* InterfaceController.swift in Sources */,
+				A9D19B1223AD10FD00B5C35C /* chooseInterfaceController.swift in Sources */,
+				A91121F523B95104008D313F /* manualHMaxInterfaceController.swift in Sources */,
+				A9D3FD4423C10BB500650361 /* statisticsInterfaceController.swift in Sources */,
+				A9D3FD4023BA469900650361 /* HMaxDescriptionInterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A9501EEB23ABB188003098F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9501EE723ABB188003098F8 /* Pulse Run WatchKit App */;
+			targetProxy = A9501EEA23ABB188003098F8 /* PBXContainerItemProxy */;
+		};
+		A9501EFA23ABB18A003098F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9501EF623ABB18A003098F8 /* Pulse Run WatchKit Extension */;
+			targetProxy = A9501EF923ABB18A003098F8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A9501EED23ABB188003098F8 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9501EEE23ABB188003098F8 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A9501F0323ABB18A003098F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A9501F0423ABB18A003098F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A9501F0623ABB18A003098F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 208D5043C0020ED887C7AB3E /* Pods-Pulse Run WatchKit Extension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "Pulse Run WatchKit Extension/Pulse Run WatchKit Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4.1;
+				DEVELOPMENT_TEAM = 38YA7NBYB4;
+				INFOPLIST_FILE = "Pulse Run WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.appboost.Pulse-Run.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		A9501F0723ABB18A003098F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5D134838828348F9062CA66 /* Pods-Pulse Run WatchKit Extension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "Pulse Run WatchKit Extension/Pulse Run WatchKit Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4.1;
+				DEVELOPMENT_TEAM = 38YA7NBYB4;
+				INFOPLIST_FILE = "Pulse Run WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.appboost.Pulse-Run.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
+		A9501F0A23ABB18A003098F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B477E91DF0EB33519966EB15 /* Pods-Pulse Run WatchKit App.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4.1;
+				DEVELOPMENT_TEAM = 38YA7NBYB4;
+				IBSC_MODULE = Pulse_Run_WatchKit_Extension;
+				INFOPLIST_FILE = "Pulse Run WatchKit App/Info.plist";
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.appboost.Pulse-Run.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		A9501F0B23ABB18A003098F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBE886D12CC0DCB769C2856F /* Pods-Pulse Run WatchKit App.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4.1;
+				DEVELOPMENT_TEAM = 38YA7NBYB4;
+				IBSC_MODULE = Pulse_Run_WatchKit_Extension;
+				INFOPLIST_FILE = "Pulse Run WatchKit App/Info.plist";
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.appboost.Pulse-Run.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
+		A9501F0E23ABB18A003098F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E80A0B5E70CE32A3539B58A /* Pods-Pulse Run.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4.1;
+				DEVELOPMENT_TEAM = 38YA7NBYB4;
+				INFOPLIST_FILE = Info.plist;
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.appboost.Pulse-Run";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A9501F0F23ABB18A003098F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D601FD3CCBC87924D7A10A4 /* Pods-Pulse Run.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4.1;
+				DEVELOPMENT_TEAM = 38YA7NBYB4;
+				INFOPLIST_FILE = Info.plist;
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.appboost.Pulse-Run";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A9501EE123ABB188003098F8 /* Build configuration list for PBXProject "Pulse Run" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9501F0323ABB18A003098F8 /* Debug */,
+				A9501F0423ABB18A003098F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9501F0523ABB18A003098F8 /* Build configuration list for PBXNativeTarget "Pulse Run WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9501F0623ABB18A003098F8 /* Debug */,
+				A9501F0723ABB18A003098F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9501F0923ABB18A003098F8 /* Build configuration list for PBXNativeTarget "Pulse Run WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9501F0A23ABB18A003098F8 /* Debug */,
+				A9501F0B23ABB18A003098F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9501F0D23ABB18A003098F8 /* Build configuration list for PBXNativeTarget "Pulse Run" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9501F0E23ABB18A003098F8 /* Debug */,
+				A9501F0F23ABB18A003098F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A9501EDE23ABB188003098F8 /* Project object */;
+}

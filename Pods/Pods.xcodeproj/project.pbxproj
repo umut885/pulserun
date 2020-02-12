@@ -1,0 +1,998 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1C208B851226CE037D9BBA1AB5747172 /* YOChartImageKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4215ACA42CEA41248B969D2A8CFDED /* YOChartImageKit-dummy.m */; };
+		1C51F3D2FEE3A9B596C0A3C7FEA8E357 /* Pods-Pulse Run-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FF9732138894963AC1CE2156D1695D0 /* Pods-Pulse Run-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		230E62D68D4F8ADF650597D0A7F7A738 /* YOBarChartImage.h in Headers */ = {isa = PBXBuildFile; fileRef = F498AC84B7EBE7580AF36F4D16D7720C /* YOBarChartImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2CFBC786D2F15607195CF5004BFF9B2A /* Pods-Pulse Run WatchKit Extension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 436B629E1ADF0E007F349A9FCAE15434 /* Pods-Pulse Run WatchKit Extension-dummy.m */; };
+		2F98C9DA6018E432D210F35F2B0BB7F3 /* YOLineChartImage.m in Sources */ = {isa = PBXBuildFile; fileRef = BB42572458E9EFEF07E957DA9B95455C /* YOLineChartImage.m */; };
+		34CEE3B6E61FB3FC96258D7C1A500014 /* Pods-Pulse Run WatchKit Extension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FFE28F7B0D2E3A295C73A449A0E1B90 /* Pods-Pulse Run WatchKit Extension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		561CA53FB4CA8F5CC8D9F74C7B2659B4 /* YOBarChartImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8E4BCDD9B92B9DDA871F05C85A83D2 /* YOBarChartImage.m */; };
+		731B6F8446B67D994E88F3F0F54F4BD5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5444836FDF1EF4C74F2572ED34F2683 /* Foundation.framework */; };
+		746E2649D89CDF92C1AB46D1C291D723 /* YODonutChartImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B235051759A03203C0294D6AD528CA8 /* YODonutChartImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		75A901313CA74E9392EF1489CD7D1BF7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5444836FDF1EF4C74F2572ED34F2683 /* Foundation.framework */; };
+		9A00A13371014A448B1474F368A730EC /* YODonutChartImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F313D8B1C4DCF799A9D4FCD21756EA /* YODonutChartImage.m */; };
+		9B4B73B9532E96342F959CE49D70790C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5444836FDF1EF4C74F2572ED34F2683 /* Foundation.framework */; };
+		B8B1D0F0B4980158339E0E16EFE23063 /* Pods-Pulse Run WatchKit App-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CBF8BB4C898E51E3AD9BB493A16E685 /* Pods-Pulse Run WatchKit App-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF133E0B098E9DFD3F979D42D2D8A285 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5444836FDF1EF4C74F2572ED34F2683 /* Foundation.framework */; };
+		BF1CD1CDDEE785489191B03AFED8B4E0 /* Pods-Pulse Run-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD5A8C5976A8E64AB2A306516A7F821 /* Pods-Pulse Run-dummy.m */; };
+		C41676B788951FDD79AC633E0EF718D6 /* YOChartImageKit.h in Headers */ = {isa = PBXBuildFile; fileRef = D752AE324B09E9881A66BF19BA3D805E /* YOChartImageKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D8FCDAC0A446E44A61477EBB3C45F40C /* YOChartImageKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C955BDFA64E820F5D49237B9EB68702C /* YOChartImageKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DB3E15ECE4EC537221DB6A46963ED4BC /* Pods-Pulse Run WatchKit App-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DD7B77987FA001FB6DADB2A5330469AE /* Pods-Pulse Run WatchKit App-dummy.m */; };
+		E4ED2C501235D2FFA6DFD0360A22AC34 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 588BC49FFDC23A01E3E8A78B687FF8C5 /* UIKit.framework */; };
+		FF9F7A02348F5D33087E72CACD5ACD83 /* YOLineChartImage.h in Headers */ = {isa = PBXBuildFile; fileRef = D822015CB36D2338D9628F15A002D6AF /* YOLineChartImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1BA220562BAC5A83DAC60FBBBBA8614A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7124CA1709F89369848C20E79ED72EA7;
+			remoteInfo = YOChartImageKit;
+		};
+		CCB3D4521D85A6512E70B4F02F9B719E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7124CA1709F89369848C20E79ED72EA7;
+			remoteInfo = YOChartImageKit;
+		};
+		EC6ECFCBA82515CB0479BF45A87DECB7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7124CA1709F89369848C20E79ED72EA7;
+			remoteInfo = YOChartImageKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0BA0C79BA9C595404D5019C24CC902DE /* Pods-Pulse Run WatchKit Extension-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Pulse Run WatchKit Extension-Info.plist"; sourceTree = "<group>"; };
+		0CBF8BB4C898E51E3AD9BB493A16E685 /* Pods-Pulse Run WatchKit App-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Pulse Run WatchKit App-umbrella.h"; sourceTree = "<group>"; };
+		0FDB8ED3CD4398060CE4AE77FE9F8626 /* YOChartImageKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "YOChartImageKit-Info.plist"; sourceTree = "<group>"; };
+		1F0FD5144D6C8363A0DF6833FBBEB7D4 /* Pods-Pulse Run WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pulse Run WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		22F49E2F9FAB36836B2A3453F7E0E0EE /* Pods-Pulse Run-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Pulse Run-Info.plist"; sourceTree = "<group>"; };
+		333CFCD1E59AFED2F436EFE35E0A40D0 /* Pods-Pulse Run-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Pulse Run-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3FF9732138894963AC1CE2156D1695D0 /* Pods-Pulse Run-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Pulse Run-umbrella.h"; sourceTree = "<group>"; };
+		41138CB6266B3CCF1056F191017F0845 /* Pods-Pulse Run.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pulse Run.debug.xcconfig"; sourceTree = "<group>"; };
+		436B629E1ADF0E007F349A9FCAE15434 /* Pods-Pulse Run WatchKit Extension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Pulse Run WatchKit Extension-dummy.m"; sourceTree = "<group>"; };
+		4BEFA3B5D38D1DEDC55DDFF61144E453 /* Pods-Pulse Run WatchKit App-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Pulse Run WatchKit App-acknowledgements.plist"; sourceTree = "<group>"; };
+		4DA904010A281D57A91489A5C169195B /* Pods-Pulse Run WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pulse Run WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+		4FFE28F7B0D2E3A295C73A449A0E1B90 /* Pods-Pulse Run WatchKit Extension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Pulse Run WatchKit Extension-umbrella.h"; sourceTree = "<group>"; };
+		54F313D8B1C4DCF799A9D4FCD21756EA /* YODonutChartImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YODonutChartImage.m; path = Source/YOChartImageKit/YODonutChartImage.m; sourceTree = "<group>"; };
+		588BC49FFDC23A01E3E8A78B687FF8C5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS5.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		79FA29BFF7933828736E9529AEA6269B /* YOChartImageKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = YOChartImageKit.framework; path = YOChartImageKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		81AB9649B6D6B84CCC78069490E6A392 /* Pods_Pulse_Run_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Pulse_Run_WatchKit_App.framework; path = "Pods-Pulse Run WatchKit App.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8538DA3E06DF908421B1B81DEBDEAD96 /* Pods-Pulse Run WatchKit App-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Pulse Run WatchKit App-frameworks.sh"; sourceTree = "<group>"; };
+		864DAC744E604F896D9C4FA76C997E02 /* Pods-Pulse Run WatchKit App.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Pulse Run WatchKit App.modulemap"; sourceTree = "<group>"; };
+		883A1393729204142D2C40A41AF2D025 /* YOChartImageKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YOChartImageKit-prefix.pch"; sourceTree = "<group>"; };
+		8EE564D713F7250583B8F7237C3B2A01 /* Pods-Pulse Run WatchKit Extension-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Pulse Run WatchKit Extension-acknowledgements.plist"; sourceTree = "<group>"; };
+		94B5258645BE151F1364F13C31FB80E1 /* Pods_Pulse_Run_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Pulse_Run_WatchKit_Extension.framework; path = "Pods-Pulse Run WatchKit Extension.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B235051759A03203C0294D6AD528CA8 /* YODonutChartImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YODonutChartImage.h; path = Source/YOChartImageKit/YODonutChartImage.h; sourceTree = "<group>"; };
+		9C783AB673F86BA5634FFEF941EBEDF4 /* Pods-Pulse Run WatchKit App-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Pulse Run WatchKit App-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E8E4BCDD9B92B9DDA871F05C85A83D2 /* YOBarChartImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YOBarChartImage.m; path = Source/YOChartImageKit/YOBarChartImage.m; sourceTree = "<group>"; };
+		AC0A3ECE3F77B52BE38BA0EB0DB50523 /* Pods-Pulse Run WatchKit Extension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Pulse Run WatchKit Extension.modulemap"; sourceTree = "<group>"; };
+		AF4215ACA42CEA41248B969D2A8CFDED /* YOChartImageKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YOChartImageKit-dummy.m"; sourceTree = "<group>"; };
+		B23B51851401985815321F93A62C1B38 /* Pods-Pulse Run.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pulse Run.release.xcconfig"; sourceTree = "<group>"; };
+		B2CCC98CB0B707A24AF2A9136ED50D71 /* Pods-Pulse Run WatchKit Extension-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Pulse Run WatchKit Extension-frameworks.sh"; sourceTree = "<group>"; };
+		B8532CF71B8402C89A29CE997314CE97 /* YOChartImageKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YOChartImageKit.xcconfig; sourceTree = "<group>"; };
+		BAD6641671E2DA0D2ADC64415F65DB26 /* Pods-Pulse Run-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Pulse Run-acknowledgements.plist"; sourceTree = "<group>"; };
+		BB42572458E9EFEF07E957DA9B95455C /* YOLineChartImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YOLineChartImage.m; path = Source/YOChartImageKit/YOLineChartImage.m; sourceTree = "<group>"; };
+		C5AAF6E13FFF4E370E8A35680F420C47 /* YOChartImageKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = YOChartImageKit.modulemap; sourceTree = "<group>"; };
+		C955BDFA64E820F5D49237B9EB68702C /* YOChartImageKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YOChartImageKit-umbrella.h"; sourceTree = "<group>"; };
+		D3AA20221258808E4FA50ACD62C76B04 /* Pods-Pulse Run-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Pulse Run-frameworks.sh"; sourceTree = "<group>"; };
+		D752AE324B09E9881A66BF19BA3D805E /* YOChartImageKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YOChartImageKit.h; path = Source/YOChartImageKit/YOChartImageKit.h; sourceTree = "<group>"; };
+		D822015CB36D2338D9628F15A002D6AF /* YOLineChartImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YOLineChartImage.h; path = Source/YOChartImageKit/YOLineChartImage.h; sourceTree = "<group>"; };
+		D965234213AD97332E05E58CA3B3836F /* Pods-Pulse Run.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Pulse Run.modulemap"; sourceTree = "<group>"; };
+		DCC3B2F9334F41D862F042DF40E5797B /* Pods-Pulse Run WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pulse Run WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		DD7B77987FA001FB6DADB2A5330469AE /* Pods-Pulse Run WatchKit App-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Pulse Run WatchKit App-dummy.m"; sourceTree = "<group>"; };
+		E0155915FCF672EC4C397F24A67CD8AA /* Pods-Pulse Run WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pulse Run WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		F418FEC5565B83B2E88D45EB2104FD3F /* Pods_Pulse_Run.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Pulse_Run.framework; path = "Pods-Pulse Run.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F498AC84B7EBE7580AF36F4D16D7720C /* YOBarChartImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YOBarChartImage.h; path = Source/YOChartImageKit/YOBarChartImage.h; sourceTree = "<group>"; };
+		F5444836FDF1EF4C74F2572ED34F2683 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS5.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		F86B76CCC367B89F21F2F09013F43565 /* Pods-Pulse Run WatchKit Extension-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Pulse Run WatchKit Extension-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F9BC6886C9D498EDB26C3582021E9B6C /* Pods-Pulse Run WatchKit App-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Pulse Run WatchKit App-Info.plist"; sourceTree = "<group>"; };
+		FAD5A8C5976A8E64AB2A306516A7F821 /* Pods-Pulse Run-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Pulse Run-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2C58B77ED09FF465F1B3C70AB1D2F4CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				731B6F8446B67D994E88F3F0F54F4BD5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3104D4A5AF886F987387FC822C31C80D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75A901313CA74E9392EF1489CD7D1BF7 /* Foundation.framework in Frameworks */,
+				E4ED2C501235D2FFA6DFD0360A22AC34 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		729E73D6A0D8A8E1B00C0D2CE9DB1024 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF133E0B098E9DFD3F979D42D2D8A285 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8306899B3CEDB75EEE8127B22A23CD83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B4B73B9532E96342F959CE49D70790C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		369B0C3AB1562E6838FF6A0810C0590E /* Pods-Pulse Run WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				AC0A3ECE3F77B52BE38BA0EB0DB50523 /* Pods-Pulse Run WatchKit Extension.modulemap */,
+				F86B76CCC367B89F21F2F09013F43565 /* Pods-Pulse Run WatchKit Extension-acknowledgements.markdown */,
+				8EE564D713F7250583B8F7237C3B2A01 /* Pods-Pulse Run WatchKit Extension-acknowledgements.plist */,
+				436B629E1ADF0E007F349A9FCAE15434 /* Pods-Pulse Run WatchKit Extension-dummy.m */,
+				B2CCC98CB0B707A24AF2A9136ED50D71 /* Pods-Pulse Run WatchKit Extension-frameworks.sh */,
+				0BA0C79BA9C595404D5019C24CC902DE /* Pods-Pulse Run WatchKit Extension-Info.plist */,
+				4FFE28F7B0D2E3A295C73A449A0E1B90 /* Pods-Pulse Run WatchKit Extension-umbrella.h */,
+				1F0FD5144D6C8363A0DF6833FBBEB7D4 /* Pods-Pulse Run WatchKit Extension.debug.xcconfig */,
+				E0155915FCF672EC4C397F24A67CD8AA /* Pods-Pulse Run WatchKit Extension.release.xcconfig */,
+			);
+			name = "Pods-Pulse Run WatchKit Extension";
+			path = "Target Support Files/Pods-Pulse Run WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		6C991CB49EA6BFD830D0ABF94567F40E /* YOChartImageKit */ = {
+			isa = PBXGroup;
+			children = (
+				F498AC84B7EBE7580AF36F4D16D7720C /* YOBarChartImage.h */,
+				9E8E4BCDD9B92B9DDA871F05C85A83D2 /* YOBarChartImage.m */,
+				D752AE324B09E9881A66BF19BA3D805E /* YOChartImageKit.h */,
+				9B235051759A03203C0294D6AD528CA8 /* YODonutChartImage.h */,
+				54F313D8B1C4DCF799A9D4FCD21756EA /* YODonutChartImage.m */,
+				D822015CB36D2338D9628F15A002D6AF /* YOLineChartImage.h */,
+				BB42572458E9EFEF07E957DA9B95455C /* YOLineChartImage.m */,
+				EDF389E7167D99CF14C405A2F8E6A128 /* Support Files */,
+			);
+			name = YOChartImageKit;
+			path = YOChartImageKit;
+			sourceTree = "<group>";
+		};
+		71566947CD5C99A39A4A0263D344E4A5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6C991CB49EA6BFD830D0ABF94567F40E /* YOChartImageKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A2C8F1725FC23F0DA3E5D3F575AE3913 /* Pods-Pulse Run WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				864DAC744E604F896D9C4FA76C997E02 /* Pods-Pulse Run WatchKit App.modulemap */,
+				9C783AB673F86BA5634FFEF941EBEDF4 /* Pods-Pulse Run WatchKit App-acknowledgements.markdown */,
+				4BEFA3B5D38D1DEDC55DDFF61144E453 /* Pods-Pulse Run WatchKit App-acknowledgements.plist */,
+				DD7B77987FA001FB6DADB2A5330469AE /* Pods-Pulse Run WatchKit App-dummy.m */,
+				8538DA3E06DF908421B1B81DEBDEAD96 /* Pods-Pulse Run WatchKit App-frameworks.sh */,
+				F9BC6886C9D498EDB26C3582021E9B6C /* Pods-Pulse Run WatchKit App-Info.plist */,
+				0CBF8BB4C898E51E3AD9BB493A16E685 /* Pods-Pulse Run WatchKit App-umbrella.h */,
+				4DA904010A281D57A91489A5C169195B /* Pods-Pulse Run WatchKit App.debug.xcconfig */,
+				DCC3B2F9334F41D862F042DF40E5797B /* Pods-Pulse Run WatchKit App.release.xcconfig */,
+			);
+			name = "Pods-Pulse Run WatchKit App";
+			path = "Target Support Files/Pods-Pulse Run WatchKit App";
+			sourceTree = "<group>";
+		};
+		A4F9A7CF8A7953F227342C1C5733E71A /* Pods-Pulse Run */ = {
+			isa = PBXGroup;
+			children = (
+				D965234213AD97332E05E58CA3B3836F /* Pods-Pulse Run.modulemap */,
+				333CFCD1E59AFED2F436EFE35E0A40D0 /* Pods-Pulse Run-acknowledgements.markdown */,
+				BAD6641671E2DA0D2ADC64415F65DB26 /* Pods-Pulse Run-acknowledgements.plist */,
+				FAD5A8C5976A8E64AB2A306516A7F821 /* Pods-Pulse Run-dummy.m */,
+				D3AA20221258808E4FA50ACD62C76B04 /* Pods-Pulse Run-frameworks.sh */,
+				22F49E2F9FAB36836B2A3453F7E0E0EE /* Pods-Pulse Run-Info.plist */,
+				3FF9732138894963AC1CE2156D1695D0 /* Pods-Pulse Run-umbrella.h */,
+				41138CB6266B3CCF1056F191017F0845 /* Pods-Pulse Run.debug.xcconfig */,
+				B23B51851401985815321F93A62C1B38 /* Pods-Pulse Run.release.xcconfig */,
+			);
+			name = "Pods-Pulse Run";
+			path = "Target Support Files/Pods-Pulse Run";
+			sourceTree = "<group>";
+		};
+		B28CE43407CEAC117D2A976683A764D8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E9AE99B27260C852BF2257C2427FDD4D /* watchOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				B28CE43407CEAC117D2A976683A764D8 /* Frameworks */,
+				71566947CD5C99A39A4A0263D344E4A5 /* Pods */,
+				EEBEB4796F70519521FCC925E007F77D /* Products */,
+				E81DEACCF94499728849E8545295FCDB /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		E81DEACCF94499728849E8545295FCDB /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A4F9A7CF8A7953F227342C1C5733E71A /* Pods-Pulse Run */,
+				A2C8F1725FC23F0DA3E5D3F575AE3913 /* Pods-Pulse Run WatchKit App */,
+				369B0C3AB1562E6838FF6A0810C0590E /* Pods-Pulse Run WatchKit Extension */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		E9AE99B27260C852BF2257C2427FDD4D /* watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				F5444836FDF1EF4C74F2572ED34F2683 /* Foundation.framework */,
+				588BC49FFDC23A01E3E8A78B687FF8C5 /* UIKit.framework */,
+			);
+			name = watchOS;
+			sourceTree = "<group>";
+		};
+		EDF389E7167D99CF14C405A2F8E6A128 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C5AAF6E13FFF4E370E8A35680F420C47 /* YOChartImageKit.modulemap */,
+				B8532CF71B8402C89A29CE997314CE97 /* YOChartImageKit.xcconfig */,
+				AF4215ACA42CEA41248B969D2A8CFDED /* YOChartImageKit-dummy.m */,
+				0FDB8ED3CD4398060CE4AE77FE9F8626 /* YOChartImageKit-Info.plist */,
+				883A1393729204142D2C40A41AF2D025 /* YOChartImageKit-prefix.pch */,
+				C955BDFA64E820F5D49237B9EB68702C /* YOChartImageKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/YOChartImageKit";
+			sourceTree = "<group>";
+		};
+		EEBEB4796F70519521FCC925E007F77D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F418FEC5565B83B2E88D45EB2104FD3F /* Pods_Pulse_Run.framework */,
+				81AB9649B6D6B84CCC78069490E6A392 /* Pods_Pulse_Run_WatchKit_App.framework */,
+				94B5258645BE151F1364F13C31FB80E1 /* Pods_Pulse_Run_WatchKit_Extension.framework */,
+				79FA29BFF7933828736E9529AEA6269B /* YOChartImageKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		44133611695E70E8A35FC4C623B9D964 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8B1D0F0B4980158339E0E16EFE23063 /* Pods-Pulse Run WatchKit App-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		445FE0A3859407267E9D60D419530425 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34CEE3B6E61FB3FC96258D7C1A500014 /* Pods-Pulse Run WatchKit Extension-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78791805F6B14C754487112F824FB91A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C51F3D2FEE3A9B596C0A3C7FEA8E357 /* Pods-Pulse Run-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A34932E4DB686044C258970CD08D3AB8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				230E62D68D4F8ADF650597D0A7F7A738 /* YOBarChartImage.h in Headers */,
+				D8FCDAC0A446E44A61477EBB3C45F40C /* YOChartImageKit-umbrella.h in Headers */,
+				C41676B788951FDD79AC633E0EF718D6 /* YOChartImageKit.h in Headers */,
+				746E2649D89CDF92C1AB46D1C291D723 /* YODonutChartImage.h in Headers */,
+				FF9F7A02348F5D33087E72CACD5ACD83 /* YOLineChartImage.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6C45C6B6C10722A5A514E0F1BA5DA1B4 /* Pods-Pulse Run WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBB5563B89F0F20EF79A317BA94FFA68 /* Build configuration list for PBXNativeTarget "Pods-Pulse Run WatchKit Extension" */;
+			buildPhases = (
+				445FE0A3859407267E9D60D419530425 /* Headers */,
+				2BCBD0AB2A5CA1B40294C9E0B0FCD5AD /* Sources */,
+				729E73D6A0D8A8E1B00C0D2CE9DB1024 /* Frameworks */,
+				1C19BDEFD8C5F56416849FB73506B83D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7D065CAC1144673EAE2472A33DA1EB94 /* PBXTargetDependency */,
+			);
+			name = "Pods-Pulse Run WatchKit Extension";
+			productName = "Pods-Pulse Run WatchKit Extension";
+			productReference = 94B5258645BE151F1364F13C31FB80E1 /* Pods_Pulse_Run_WatchKit_Extension.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7124CA1709F89369848C20E79ED72EA7 /* YOChartImageKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B321EC4598DB3756BDBBE9411A675DD /* Build configuration list for PBXNativeTarget "YOChartImageKit" */;
+			buildPhases = (
+				A34932E4DB686044C258970CD08D3AB8 /* Headers */,
+				93DA5D088D6770BC84EE67CFEDEE93C2 /* Sources */,
+				3104D4A5AF886F987387FC822C31C80D /* Frameworks */,
+				69FDB8A071DAC77027CEF6BA282BEEC3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YOChartImageKit;
+			productName = YOChartImageKit;
+			productReference = 79FA29BFF7933828736E9529AEA6269B /* YOChartImageKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		838FAA931D1CF25DEDAF0CF331E7731A /* Pods-Pulse Run */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 616B4EF7BC13EE013DBDBC7B1A55EB27 /* Build configuration list for PBXNativeTarget "Pods-Pulse Run" */;
+			buildPhases = (
+				78791805F6B14C754487112F824FB91A /* Headers */,
+				425854577F2B2B641848757551A4FB93 /* Sources */,
+				8306899B3CEDB75EEE8127B22A23CD83 /* Frameworks */,
+				88E02AD58E0335082E829E2449F535C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				356B9CF7A4EE00AEC7A49A0D7BA956DE /* PBXTargetDependency */,
+			);
+			name = "Pods-Pulse Run";
+			productName = "Pods-Pulse Run";
+			productReference = F418FEC5565B83B2E88D45EB2104FD3F /* Pods_Pulse_Run.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		869F04B3DFE80D2C8BBF966FCE608FB5 /* Pods-Pulse Run WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA0912D13213898A64855FCD6E0D59C1 /* Build configuration list for PBXNativeTarget "Pods-Pulse Run WatchKit App" */;
+			buildPhases = (
+				44133611695E70E8A35FC4C623B9D964 /* Headers */,
+				9D73CB31C24F4BE272BB95D39F34B8E5 /* Sources */,
+				2C58B77ED09FF465F1B3C70AB1D2F4CA /* Frameworks */,
+				EC52DAC4D3D0D95E715AD94FA457A657 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4CD047DD5D6FF059CE34ADE7D4B45542 /* PBXTargetDependency */,
+			);
+			name = "Pods-Pulse Run WatchKit App";
+			productName = "Pods-Pulse Run WatchKit App";
+			productReference = 81AB9649B6D6B84CCC78069490E6A392 /* Pods_Pulse_Run_WatchKit_App.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = EEBEB4796F70519521FCC925E007F77D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				838FAA931D1CF25DEDAF0CF331E7731A /* Pods-Pulse Run */,
+				869F04B3DFE80D2C8BBF966FCE608FB5 /* Pods-Pulse Run WatchKit App */,
+				6C45C6B6C10722A5A514E0F1BA5DA1B4 /* Pods-Pulse Run WatchKit Extension */,
+				7124CA1709F89369848C20E79ED72EA7 /* YOChartImageKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1C19BDEFD8C5F56416849FB73506B83D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69FDB8A071DAC77027CEF6BA282BEEC3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88E02AD58E0335082E829E2449F535C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC52DAC4D3D0D95E715AD94FA457A657 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2BCBD0AB2A5CA1B40294C9E0B0FCD5AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CFBC786D2F15607195CF5004BFF9B2A /* Pods-Pulse Run WatchKit Extension-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		425854577F2B2B641848757551A4FB93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF1CD1CDDEE785489191B03AFED8B4E0 /* Pods-Pulse Run-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93DA5D088D6770BC84EE67CFEDEE93C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				561CA53FB4CA8F5CC8D9F74C7B2659B4 /* YOBarChartImage.m in Sources */,
+				1C208B851226CE037D9BBA1AB5747172 /* YOChartImageKit-dummy.m in Sources */,
+				9A00A13371014A448B1474F368A730EC /* YODonutChartImage.m in Sources */,
+				2F98C9DA6018E432D210F35F2B0BB7F3 /* YOLineChartImage.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D73CB31C24F4BE272BB95D39F34B8E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB3E15ECE4EC537221DB6A46963ED4BC /* Pods-Pulse Run WatchKit App-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		356B9CF7A4EE00AEC7A49A0D7BA956DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = YOChartImageKit;
+			target = 7124CA1709F89369848C20E79ED72EA7 /* YOChartImageKit */;
+			targetProxy = 1BA220562BAC5A83DAC60FBBBBA8614A /* PBXContainerItemProxy */;
+		};
+		4CD047DD5D6FF059CE34ADE7D4B45542 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = YOChartImageKit;
+			target = 7124CA1709F89369848C20E79ED72EA7 /* YOChartImageKit */;
+			targetProxy = EC6ECFCBA82515CB0479BF45A87DECB7 /* PBXContainerItemProxy */;
+		};
+		7D065CAC1144673EAE2472A33DA1EB94 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = YOChartImageKit;
+			target = 7124CA1709F89369848C20E79ED72EA7 /* YOChartImageKit */;
+			targetProxy = CCB3D4521D85A6512E70B4F02F9B719E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		09F1AD9F8C47F56CE138096697D909A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F0FD5144D6C8363A0DF6833FBBEB7D4 /* Pods-Pulse Run WatchKit Extension.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Pulse Run WatchKit Extension/Pods-Pulse Run WatchKit Extension-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Pulse Run WatchKit Extension/Pods-Pulse Run WatchKit Extension.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		389B74503440732743F0A979F48EA7C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B23B51851401985815321F93A62C1B38 /* Pods-Pulse Run.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Pulse Run/Pods-Pulse Run-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Pulse Run/Pods-Pulse Run.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
+		41E8892EAED584E4A40D884390E7358A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8532CF71B8402C89A29CE997314CE97 /* YOChartImageKit.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/YOChartImageKit/YOChartImageKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YOChartImageKit/YOChartImageKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/YOChartImageKit/YOChartImageKit.modulemap";
+				PRODUCT_MODULE_NAME = YOChartImageKit;
+				PRODUCT_NAME = YOChartImageKit;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		6C7BBCF83758E87D8BD1DD6FD9163410 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCC3B2F9334F41D862F042DF40E5797B /* Pods-Pulse Run WatchKit App.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Pulse Run WatchKit App/Pods-Pulse Run WatchKit App-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Pulse Run WatchKit App/Pods-Pulse Run WatchKit App.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
+		823092228A7DEB7C5A8433FB132D0065 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41138CB6266B3CCF1056F191017F0845 /* Pods-Pulse Run.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Pulse Run/Pods-Pulse Run-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Pulse Run/Pods-Pulse Run.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		A758504B7DCFDDA7004A8A64FF7137DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0155915FCF672EC4C397F24A67CD8AA /* Pods-Pulse Run WatchKit Extension.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Pulse Run WatchKit Extension/Pods-Pulse Run WatchKit Extension-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Pulse Run WatchKit Extension/Pods-Pulse Run WatchKit Extension.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
+		D35638334E2048BBFC997832963E1B5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8532CF71B8402C89A29CE997314CE97 /* YOChartImageKit.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/YOChartImageKit/YOChartImageKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YOChartImageKit/YOChartImageKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/YOChartImageKit/YOChartImageKit.modulemap";
+				PRODUCT_MODULE_NAME = YOChartImageKit;
+				PRODUCT_NAME = YOChartImageKit;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		D51956542E1F2A75D23A41318D65FA37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		D744F273D0338955DB02E0F36E2B95D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DA904010A281D57A91489A5C169195B /* Pods-Pulse Run WatchKit App.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Pulse Run WatchKit App/Pods-Pulse Run WatchKit App-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Pulse Run WatchKit App/Pods-Pulse Run WatchKit App.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		F46900EF7BED262D107B1A0457CCC609 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D51956542E1F2A75D23A41318D65FA37 /* Debug */,
+				F46900EF7BED262D107B1A0457CCC609 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		616B4EF7BC13EE013DBDBC7B1A55EB27 /* Build configuration list for PBXNativeTarget "Pods-Pulse Run" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				823092228A7DEB7C5A8433FB132D0065 /* Debug */,
+				389B74503440732743F0A979F48EA7C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B321EC4598DB3756BDBBE9411A675DD /* Build configuration list for PBXNativeTarget "YOChartImageKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D35638334E2048BBFC997832963E1B5C /* Debug */,
+				41E8892EAED584E4A40D884390E7358A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA0912D13213898A64855FCD6E0D59C1 /* Build configuration list for PBXNativeTarget "Pods-Pulse Run WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D744F273D0338955DB02E0F36E2B95D8 /* Debug */,
+				6C7BBCF83758E87D8BD1DD6FD9163410 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBB5563B89F0F20EF79A317BA94FFA68 /* Build configuration list for PBXNativeTarget "Pods-Pulse Run WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09F1AD9F8C47F56CE138096697D909A8 /* Debug */,
+				A758504B7DCFDDA7004A8A64FF7137DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

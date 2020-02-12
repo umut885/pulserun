@@ -1,0 +1,1112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="15505" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch44"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="15501"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="kw2-5M-yl8">
+            <objects>
+                <controller id="vDw-vB-TaV">
+                    <items>
+                        <label alignment="left" text="http://appboost.me" id="Fuf-7e-4qQ">
+                            <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
+                        </label>
+                        <label alignment="left" numberOfLines="31" id="COd-1h-fvU">
+                            <string key="text">This app supports you by giving haptic and acoustic feedback regarding your current heart rate and chosen training type (endurance, balance, speed). From now on, your Apple Watch will tell you either to speed up or slow down during your runs. For each training type a minimal and maximal heart rate will be calculated. If you are not sure, whether the minimal and maximal heart rates fit your current health, you should see a doctor before using this app.</string>
+                        </label>
+                        <label height="20" alignment="left" numberOfLines="4" id="aUp-Hf-STe"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-238" y="-366"/>
+        </scene>
+        <!--Pulse Run-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller identifier="home" title="Pulse Run" fullBounds="YES" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Pulse_Run_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" height="0.69999999999999996" alignment="left" layout="overlap" id="HYp-LE-ZEI">
+                            <items>
+                                <imageView alignment="left" image="info.circle" catalog="system" id="UAZ-al-teA">
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </imageView>
+                                <button width="35" height="33" alignment="left" id="rXU-JE-e8e" userLabel="button_info">
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <connections>
+                                        <segue destination="vDw-vB-TaV" kind="modal" id="JNH-On-eMi"/>
+                                    </connections>
+                                </button>
+                                <imageView width="0.69999999999999996" height="0.40000000000000002" alignment="center" verticalAlignment="center" image="logo" id="D4U-RT-Xw2"/>
+                                <button width="35" height="33" alignment="right" id="RzR-pH-Nh7" userLabel="button_settings">
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <connections>
+                                        <segue destination="GDX-30-Ae9" kind="push" id="S7q-xG-MAW"/>
+                                    </connections>
+                                </button>
+                                <imageView alignment="right" image="gear" catalog="system" id="i4d-IN-UfD">
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </imageView>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" verticalAlignment="bottom" id="bGe-f3-Cn7">
+                            <items>
+                                <button width="0.5" height="35" alignment="left" title="statistic" id="Kal-7Q-5kl">
+                                    <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <variation key="device=watch38mm" title="stats"/>
+                                    <connections>
+                                        <segue destination="dM2-Q4-4ab" kind="modal" id="nHB-Qd-Ibl"/>
+                                    </connections>
+                                </button>
+                                <button width="0.5" height="35" alignment="center" verticalAlignment="bottom" title="run" id="tS5-ZG-kqV">
+                                    <color key="backgroundColor" red="0.36078431370000003" green="0.53333333329999999" blue="0.85490196080000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <connections>
+                                        <segue destination="3Bd-5Q-pfu" kind="push" id="8Ub-Du-XG0"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-236" y="56"/>
+        </scene>
+        <!--noStatisticsYet-->
+        <scene sceneID="R8g-Ae-VRy">
+            <objects>
+                <controller identifier="noStatisticsYet" id="yKT-Ak-FQc">
+                    <items>
+                        <group width="1" alignment="left" id="cuW-cC-NJu">
+                            <items>
+                                <imageView alignment="left" image="lightbulb" catalog="system" id="0sf-bd-k9m">
+                                    <color key="tintColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="0.65539383559999997" colorSpace="custom" customColorSpace="sRGB"/>
+                                </imageView>
+                                <label height="20" alignment="left" text="No runs yet" id="XkQ-S0-YO1">
+                                    <color key="textColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="0.65539383559999997" colorSpace="custom" customColorSpace="sRGB"/>
+                                </label>
+                            </items>
+                        </group>
+                        <label alignment="left" text="In order to see statistics, you need to make at least one run." numberOfLines="7" id="qdO-x8-oqD"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-568" y="386"/>
+        </scene>
+        <!--back-->
+        <scene sceneID="1DH-2Y-c9s">
+            <objects>
+                <controller identifier="statistics" title="back" id="dM2-Q4-4ab" customClass="statisticsInterfaceController" customModule="Pulse_Run_WatchKit_Extension">
+                    <items>
+                        <label alignment="left" text="last 3 runs" id="IV2-Sp-tJy">
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                        </label>
+                        <group width="1" height="0.29999999999999999" alignment="left" layout="vertical" id="j87-6X-iNR" userLabel="run_data_group">
+                            <items>
+                                <label alignment="left" text="04.01.2020" id="wle-YE-KiX">
+                                    <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                </label>
+                                <group width="1" alignment="left" id="0l8-wR-vrD">
+                                    <items>
+                                        <imageView width="10" height="10" alignment="left" verticalAlignment="center" image="heart.fill" catalog="system" id="fVT-mN-1q8">
+                                            <color key="tintColor" red="0.79741126299999998" green="0.078062273560000006" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <variation key="device=watch38mm" height="9" width="9"/>
+                                        </imageView>
+                                        <label alignment="left" verticalAlignment="center" text="---" id="Elo-MT-sPc">
+                                            <variation key="device=watch38mm">
+                                                <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                            </variation>
+                                            <variation key="device=watch40mm">
+                                                <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                            </variation>
+                                            <variation key="device=watch42mm">
+                                                <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                            </variation>
+                                        </label>
+                                        <imageView width="10" height="10" alignment="left" verticalAlignment="center" image="map" catalog="system" id="Qsl-q5-xQe">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <variation key="device=watch38mm" height="9" width="9"/>
+                                        </imageView>
+                                        <label alignment="left" verticalAlignment="center" text="---" id="Jfp-nh-9Y5">
+                                            <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                                            <variation key="device=watch38mm">
+                                                <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                            </variation>
+                                            <variation key="device=watch40mm">
+                                                <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                            </variation>
+                                            <variation key="device=watch42mm">
+                                                <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                            </variation>
+                                        </label>
+                                        <imageView width="10" height="10" alignment="left" verticalAlignment="center" image="calories" id="yQP-na-krk">
+                                            <variation key="device=watch38mm" height="9" width="9"/>
+                                        </imageView>
+                                        <label alignment="left" verticalAlignment="center" text="---" id="u0n-1x-Fhw">
+                                            <variation key="device=watch38mm">
+                                                <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                            </variation>
+                                            <variation key="device=watch40mm">
+                                                <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                            </variation>
+                                            <variation key="device=watch42mm">
+                                                <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                            </variation>
+                                        </label>
+                                        <imageView width="10" height="10" alignment="left" verticalAlignment="center" image="steps" id="nT4-O9-xFu">
+                                            <variation key="device=watch38mm" height="9" hidden="NO" width="9"/>
+                                        </imageView>
+                                        <label alignment="left" verticalAlignment="center" text="-----" id="1c8-aV-cbK">
+                                            <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                                            <variation key="device=watch38mm" hidden="NO">
+                                                <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                            </variation>
+                                            <variation key="device=watch40mm">
+                                                <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                            </variation>
+                                            <variation key="device=watch42mm">
+                                                <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                            </variation>
+                                        </label>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                        <group width="1" height="0.29999999999999999" alignment="left" layout="vertical" id="HM8-01-sdb" userLabel="run_data_group">
+                            <items>
+                                <label alignment="left" text="05.01.2020" id="lXB-M8-HKZ">
+                                    <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                </label>
+                                <group width="1" alignment="left" id="IcE-ep-Blq">
+                                    <items>
+                                        <imageView width="10" height="10" alignment="left" verticalAlignment="center" image="heart.fill" catalog="system" id="MSc-K9-MNA">
+                                            <color key="tintColor" red="0.79741126299999998" green="0.078062273560000006" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <variation key="device=watch38mm" height="9" width="9"/>
+                                        </imageView>
+                                        <label alignment="left" verticalAlignment="center" text="---" id="xN1-vx-5pq">
+                                            <variation key="device=watch38mm">
+                                                <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                            </variation>
+                                            <variation key="device=watch40mm">
+                                                <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                            </variation>
+                                            <variation key="device=watch42mm">
+                                                <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                            </variation>
+                                        </label>
+                                        <imageView width="10" height="10" alignment="left" verticalAlignment="center" image="map" catalog="system" id="p7e-Mq-aj1">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <variation key="device=watch38mm" height="9" width="9"/>
+                                        </imageView>
+                                        <label alignment="left" verticalAlignment="center" text="---" id="KR4-Ph-X76">
+                                            <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                                            <variation key="device=watch38mm">
+                                                <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                            </variation>
+                                            <variation key="device=watch40mm">
+                                                <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                            </variation>
+                                            <variation key="device=watch42mm">
+                                                <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                            </variation>
+                                        </label>
+                                        <imageView width="10" height="10" alignment="left" verticalAlignment="center" image="calories" id="JOI-jg-nYz">
+                                            <variation key="device=watch38mm" height="9" width="9"/>
+                                        </imageView>
+                                        <label alignment="left" verticalAlignment="center" text="---" id="EDs-20-6ar">
+                                            <variation key="device=watch38mm">
+                                                <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                            </variation>
+                                            <variation key="device=watch40mm">
+                                                <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                            </variation>
+                                            <variation key="device=watch42mm">
+                                                <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                            </variation>
+                                        </label>
+                                        <imageView width="10" height="10" alignment="left" verticalAlignment="center" image="steps" id="cbN-EI-Svp">
+                                            <variation key="device=watch38mm" height="9" hidden="NO" width="9"/>
+                                        </imageView>
+                                        <label alignment="left" verticalAlignment="center" text="-----" id="N2C-mL-PFB">
+                                            <variation key="device=watch38mm" hidden="NO">
+                                                <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                            </variation>
+                                            <variation key="device=watch40mm">
+                                                <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                            </variation>
+                                            <variation key="device=watch42mm">
+                                                <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                            </variation>
+                                        </label>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                        <group width="1" height="0.29999999999999999" alignment="left" layout="vertical" id="Dxd-IM-QdQ" userLabel="run_data_group">
+                            <items>
+                                <label alignment="left" text="06.01.2020" id="LBR-SB-fPC">
+                                    <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                </label>
+                                <group width="1" alignment="left" id="rGg-O6-ZP4">
+                                    <items>
+                                        <imageView width="10" height="10" alignment="left" verticalAlignment="center" image="heart.fill" catalog="system" id="2qW-fi-6wP">
+                                            <color key="tintColor" red="0.79741126299999998" green="0.078062273560000006" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <variation key="device=watch38mm" height="9" width="9"/>
+                                        </imageView>
+                                        <label alignment="left" verticalAlignment="center" text="---" id="BVe-f8-gzV">
+                                            <variation key="device=watch38mm">
+                                                <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                            </variation>
+                                            <variation key="device=watch40mm">
+                                                <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                            </variation>
+                                            <variation key="device=watch42mm">
+                                                <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                            </variation>
+                                        </label>
+                                        <imageView width="10" height="10" alignment="left" verticalAlignment="center" image="map" catalog="system" id="Gsr-9i-kTy">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <variation key="device=watch38mm" height="9" width="9"/>
+                                        </imageView>
+                                        <label alignment="left" verticalAlignment="center" text="---" id="Ty1-E8-lCl">
+                                            <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                                            <variation key="device=watch38mm">
+                                                <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                            </variation>
+                                            <variation key="device=watch40mm">
+                                                <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                            </variation>
+                                            <variation key="device=watch42mm">
+                                                <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                            </variation>
+                                        </label>
+                                        <imageView width="10" height="10" alignment="left" verticalAlignment="center" image="calories" id="MVT-vt-7p3">
+                                            <variation key="device=watch38mm" height="9" width="9"/>
+                                        </imageView>
+                                        <label alignment="left" verticalAlignment="center" text="---" id="SAD-FG-RVn">
+                                            <variation key="device=watch38mm">
+                                                <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                            </variation>
+                                            <variation key="device=watch40mm">
+                                                <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                            </variation>
+                                            <variation key="device=watch42mm">
+                                                <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                            </variation>
+                                        </label>
+                                        <imageView width="10" height="10" alignment="left" verticalAlignment="center" image="steps" id="gYj-6O-FKB">
+                                            <variation key="device=watch38mm" height="9" width="9"/>
+                                        </imageView>
+                                        <label alignment="left" verticalAlignment="center" text="-----" id="YiL-An-erq">
+                                            <variation key="device=watch38mm">
+                                                <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                            </variation>
+                                            <variation key="device=watch40mm">
+                                                <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                            </variation>
+                                            <variation key="device=watch42mm">
+                                                <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                            </variation>
+                                        </label>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="avgBPMOne" destination="Elo-MT-sPc" id="Ln3-gV-0ne"/>
+                        <outlet property="avgBPMThree" destination="BVe-f8-gzV" id="p6L-v4-GJ1"/>
+                        <outlet property="avgBPMTwo" destination="xN1-vx-5pq" id="pGM-rn-EJQ"/>
+                        <outlet property="caloriesOne" destination="u0n-1x-Fhw" id="heQ-mU-Shd"/>
+                        <outlet property="caloriesThree" destination="SAD-FG-RVn" id="WHh-m5-P4w"/>
+                        <outlet property="caloriesTwo" destination="EDs-20-6ar" id="AOC-e4-kh8"/>
+                        <outlet property="dataGroup1" destination="j87-6X-iNR" id="yno-13-pO9"/>
+                        <outlet property="dataGroup2" destination="HM8-01-sdb" id="3dT-ao-C7q"/>
+                        <outlet property="dataGroup3" destination="Dxd-IM-QdQ" id="ROb-Ad-5KH"/>
+                        <outlet property="dateOne" destination="wle-YE-KiX" id="dCg-pU-SWJ"/>
+                        <outlet property="dateThree" destination="LBR-SB-fPC" id="5i1-4K-5fi"/>
+                        <outlet property="dateTwo" destination="lXB-M8-HKZ" id="I12-bW-5Bi"/>
+                        <outlet property="distanceOne" destination="Jfp-nh-9Y5" id="Ty6-BQ-Hsq"/>
+                        <outlet property="distanceThree" destination="Ty1-E8-lCl" id="ylZ-V7-ND2"/>
+                        <outlet property="distanceTwo" destination="KR4-Ph-X76" id="cl9-pe-QXd"/>
+                        <outlet property="stepsOne" destination="1c8-aV-cbK" id="2Xz-4i-Dh2"/>
+                        <outlet property="stepsThree" destination="YiL-An-erq" id="TOe-9h-Kco"/>
+                        <outlet property="stepsTwo" destination="N2C-mL-PFB" id="6pG-Jv-up1"/>
+                        <outlet property="topLabel" destination="IV2-Sp-tJy" id="kw6-jj-rev"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-238" y="374"/>
+        </scene>
+        <!--choose-->
+        <scene sceneID="ICx-ZG-4Xj">
+            <objects>
+                <controller identifier="choose" fullBounds="YES" id="3Bd-5Q-pfu" customClass="chooseInterfaceController" customModule="Pulse_Run_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="center" layout="overlap" id="HfW-nX-p6I">
+                            <items>
+                                <imageView alignment="left" verticalAlignment="center" image="info.circle" catalog="system" id="ExS-pc-Tne">
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </imageView>
+                                <switch width="1" height="35" alignment="right" title="endurance" id="NYI-vN-uvT">
+                                    <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
+                                    <color key="titleColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <variation key="device=watch38mm" height="30" title="stamina" width="0.80000000000000004" widthAdjustment="1">
+                                        <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                    </variation>
+                                    <variation key="device=watch40mm" width="0.80000000000000004" widthAdjustment="3">
+                                        <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                    </variation>
+                                    <variation key="device=watch42mm" width="0.80000000000000004" widthAdjustment="6">
+                                        <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                    </variation>
+                                    <variation key="device=watch44mm" width="0.80000000000000004"/>
+                                    <connections>
+                                        <action selector="longRunSwitchTapped:" destination="3Bd-5Q-pfu" id="OGA-q1-3NV"/>
+                                    </connections>
+                                </switch>
+                                <button width="28" height="30" alignment="left" id="AVI-QC-5RA">
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <connections>
+                                        <segue destination="tH4-fN-H20" kind="modal" id="H0t-0e-GQJ"/>
+                                    </connections>
+                                </button>
+                            </items>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </group>
+                        <group width="1" alignment="center" layout="overlap" id="9RO-XP-x1z">
+                            <items>
+                                <imageView alignment="left" verticalAlignment="center" image="info.circle" catalog="system" id="Cl3-Zp-9Mw">
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </imageView>
+                                <switch width="1" height="35" alignment="right" title="balance" id="HyS-4b-EzP">
+                                    <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <variation key="device=watch38mm" height="30" width="0.80000000000000004" widthAdjustment="1">
+                                        <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                    </variation>
+                                    <variation key="device=watch40mm" width="0.80000000000000004" widthAdjustment="3">
+                                        <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                    </variation>
+                                    <variation key="device=watch42mm" width="0.80000000000000004" widthAdjustment="6">
+                                        <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                    </variation>
+                                    <variation key="device=watch44mm" width="0.80000000000000004"/>
+                                    <connections>
+                                        <action selector="midRunSwitchTapped:" destination="3Bd-5Q-pfu" id="SF3-Ie-DEx"/>
+                                    </connections>
+                                </switch>
+                                <button width="28" height="30" alignment="left" id="pLP-Df-be5">
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <connections>
+                                        <segue destination="nYZ-zF-OHD" kind="modal" id="qJN-Eq-pJf"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" alignment="center" layout="overlap" id="y0I-gh-hvw">
+                            <items>
+                                <imageView alignment="left" verticalAlignment="center" image="info.circle" catalog="system" id="SU7-Vl-f1W">
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </imageView>
+                                <switch width="1" height="35" alignment="right" title="speed" id="EaL-Pb-8nh">
+                                    <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
+                                    <color key="titleColor" red="0.85666519399999996" green="0.2222842276" blue="0.43137753010000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <variation key="device=watch38mm" height="30" width="0.80000000000000004" widthAdjustment="1">
+                                        <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                    </variation>
+                                    <variation key="device=watch40mm" width="0.80000000000000004" widthAdjustment="3">
+                                        <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                    </variation>
+                                    <variation key="device=watch42mm" width="0.80000000000000004" widthAdjustment="6">
+                                        <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                    </variation>
+                                    <variation key="device=watch44mm" width="0.80000000000000004"/>
+                                    <connections>
+                                        <action selector="fastRunSwitchTapped:" destination="3Bd-5Q-pfu" id="9DB-tT-nwE"/>
+                                    </connections>
+                                </switch>
+                                <button width="28" height="30" alignment="left" id="8cK-xI-G9d">
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <connections>
+                                        <segue destination="AZh-h8-Bks" kind="modal" id="pCV-qw-ugc"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" alignment="center" verticalAlignment="bottom" id="gC9-Hw-1Qh">
+                            <items>
+                                <button width="0.5" height="35" alignment="left" title="home" id="cdN-FM-ykF" userLabel="Home Button">
+                                    <color key="backgroundColor" red="0.36078431370000003" green="0.53333333329999999" blue="0.85490196080000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <connections>
+                                        <action selector="homeButtonTapped" destination="3Bd-5Q-pfu" id="Inq-qQ-q05"/>
+                                    </connections>
+                                </button>
+                                <button width="0.5" height="35" alignment="right" verticalAlignment="bottom" title="start" enabled="NO" id="3hO-eI-3Pl">
+                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <connections>
+                                        <action selector="startButtonTapped" destination="3Bd-5Q-pfu" id="EtM-pO-tsW"/>
+                                        <segue destination="d6F-Q4-kT7" kind="push" id="Dse-di-xg5"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="fastRunSwitch" destination="EaL-Pb-8nh" id="GmU-aJ-TaW"/>
+                        <outlet property="homeButton" destination="cdN-FM-ykF" id="Aig-JX-7XZ"/>
+                        <outlet property="longRunSwitch" destination="NYI-vN-uvT" id="Kxt-1M-Blm"/>
+                        <outlet property="midRunSwitch" destination="HyS-4b-EzP" id="SJY-Kx-U1s"/>
+                        <outlet property="startButton" destination="3hO-eI-3Pl" id="enI-yQ-aFB"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="118" y="70"/>
+        </scene>
+        <!--run-->
+        <scene sceneID="9C9-o1-nzU">
+            <objects>
+                <controller identifier="run" fullBounds="YES" fullScreen="YES" id="d6F-Q4-kT7" customClass="runInterfaceController" customModule="Pulse_Run_WatchKit_Extension">
+                    <items>
+                        <group width="1" height="12" alignment="left" id="kph-2b-Fno">
+                            <variation key="device=watch44mm" hidden="YES"/>
+                        </group>
+                        <group width="1" alignment="left" layout="vertical" id="dHA-Mz-rQg">
+                            <items>
+                                <group width="1" alignment="left" id="47H-7e-rC5">
+                                    <items>
+                                        <group width="0.33000000000000002" height="16" alignment="left" id="Eds-1d-RaB">
+                                            <items>
+                                                <imageView width="13" height="13" alignment="left" verticalAlignment="center" image="heart" catalog="system" id="DAl-VA-H4w">
+                                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <variation key="device=watch38mm" hidden="YES"/>
+                                                    <variation key="device=watch40mm" hidden="YES"/>
+                                                    <variation key="device=watch42mm" hidden="YES"/>
+                                                </imageView>
+                                                <imageView width="13" height="13" alignment="left" verticalAlignment="center" image="arrow.down.to.line" catalog="system" id="ccy-2c-Kea">
+                                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </imageView>
+                                                <label alignment="left" text="---" id="lDT-yO-Rdz" userLabel="HMax min">
+                                                    <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                                </label>
+                                            </items>
+                                        </group>
+                                        <group width="0.33000000000000002" alignment="left" id="IFn-yK-UJ0">
+                                            <items>
+                                                <imageView width="13" height="13" alignment="left" verticalAlignment="center" image="heart.fill" catalog="system" id="tob-MY-3eR">
+                                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <variation key="device=watch38mm" hidden="YES"/>
+                                                    <variation key="device=watch40mm" hidden="YES"/>
+                                                    <variation key="device=watch42mm" hidden="YES"/>
+                                                </imageView>
+                                                <imageView width="13" height="13" alignment="left" verticalAlignment="center" image="arrow.up.to.line" catalog="system" id="bWU-Ok-guX">
+                                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </imageView>
+                                                <label alignment="left" text="---" id="lUs-tf-hUT" userLabel="HMax min">
+                                                    <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                                </label>
+                                            </items>
+                                        </group>
+                                        <group width="38" alignment="left" id="1TS-yW-vcM">
+                                            <items>
+                                                <imageView width="13" height="13" alignment="left" verticalAlignment="center" image="heart.fill" catalog="system" id="FNS-UR-gxf">
+                                                    <color key="tintColor" red="0.79741126299999998" green="0.078062273560000006" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <variation key="device=watch38mm" alignment="left"/>
+                                                </imageView>
+                                                <label alignment="left" text="---" id="UKs-5j-BV8">
+                                                    <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                                </label>
+                                            </items>
+                                        </group>
+                                    </items>
+                                </group>
+                                <group width="1" height="16" alignment="left" id="pNq-Xt-CsP">
+                                    <items>
+                                        <group width="0.33000000000000002" alignment="left" id="2ZC-qW-KiI">
+                                            <items>
+                                                <imageView width="12" height="13" alignment="left" verticalAlignment="center" image="map" catalog="system" id="csr-9N-APH">
+                                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </imageView>
+                                                <label alignment="left" text="---" id="orS-QE-YqX" userLabel="HMax min">
+                                                    <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                                </label>
+                                            </items>
+                                        </group>
+                                        <group width="0.33000000000000002" alignment="left" id="q23-pi-Dj2">
+                                            <items>
+                                                <imageView width="12" height="13" alignment="left" verticalAlignment="center" image="calories" id="Ndx-kz-pUM">
+                                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </imageView>
+                                                <label alignment="left" text="---" id="qG4-VP-mDe" userLabel="HMax min">
+                                                    <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                                </label>
+                                            </items>
+                                        </group>
+                                        <group width="0.33000000000000002" alignment="left" id="Kb5-E7-0OV">
+                                            <items>
+                                                <imageView width="13" height="13" alignment="left" verticalAlignment="center" image="steps" id="wkP-dz-sGr">
+                                                    <color key="tintColor" red="0.79741126299999998" green="0.078062273560000006" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <variation key="device=watch38mm" alignment="left"/>
+                                                </imageView>
+                                                <label alignment="left" text="-----" id="Zrs-BG-qy1">
+                                                    <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                                </label>
+                                            </items>
+                                        </group>
+                                    </items>
+                                </group>
+                                <label alignment="center" text="calibrating ..." id="qvy-CN-dIe"/>
+                            </items>
+                        </group>
+                        <group width="1" height="30" alignment="left" id="4u1-be-sX0">
+                            <variation key="device=watch38mm" height="10"/>
+                            <variation key="device=watch40mm" height="10"/>
+                            <variation key="device=watch42mm" height="20"/>
+                            <variation key="device=watch44mm" height="30"/>
+                        </group>
+                        <group width="1" alignment="center" layout="overlap" id="Z2D-5A-eFN">
+                            <items>
+                                <group width="1" alignment="center" id="ypm-C5-bEc" userLabel="feedback group">
+                                    <items>
+                                        <imageView width="21" height="24" alignment="center" verticalAlignment="bottom" image="arrow.up" catalog="system" id="ihY-Rx-4n6">
+                                            <color key="tintColor" red="0.85666519399999996" green="0.2222842276" blue="0.43137753010000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </imageView>
+                                        <label alignment="center" text="speed up" id="CdW-Wo-oQb">
+                                            <color key="textColor" red="0.85666519399999996" green="0.2222842276" blue="0.43137753010000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
+                                        </label>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                        <group width="1" height="50" alignment="left" id="uuj-qp-JfF">
+                            <variation key="device=watch38mm" height="10"/>
+                            <variation key="device=watch40mm" height="10"/>
+                            <variation key="device=watch42mm" height="20"/>
+                            <variation key="device=watch44mm" height="28"/>
+                        </group>
+                        <group alignment="left" verticalAlignment="center" id="2MT-SP-upm">
+                            <items>
+                                <button width="0.5" height="35" alignment="left" verticalAlignment="center" title="pause" id="VTl-JL-4GL">
+                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <connections>
+                                        <action selector="pauseButtonTapped" destination="d6F-Q4-kT7" id="0h1-eu-9Bi"/>
+                                    </connections>
+                                </button>
+                                <button width="0.5" height="35" alignment="center" verticalAlignment="center" title="finish" id="UaC-LV-MoM">
+                                    <color key="backgroundColor" red="0.36078431370000003" green="0.53333333329999999" blue="0.85490196080000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <connections>
+                                        <action selector="buttonTapped" destination="d6F-Q4-kT7" id="8Sq-gh-xn5"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="Arrow" destination="ihY-Rx-4n6" id="IXe-OH-U9E"/>
+                        <outlet property="BPMLabel" destination="UKs-5j-BV8" id="Afi-Kg-N4P"/>
+                        <outlet property="HMaxMaxLabel" destination="lUs-tf-hUT" id="z5D-gF-48a"/>
+                        <outlet property="HMaxMinLabel" destination="lDT-yO-Rdz" id="Thl-aK-sFB"/>
+                        <outlet property="button" destination="UaC-LV-MoM" id="zwH-K5-Or6"/>
+                        <outlet property="calibratingLabel" destination="qvy-CN-dIe" id="Bat-7G-ubl"/>
+                        <outlet property="caloriesLabel" destination="qG4-VP-mDe" id="Arz-Gg-vFU"/>
+                        <outlet property="distanceLabel" destination="orS-QE-YqX" id="bEe-Sk-EZG"/>
+                        <outlet property="feedbackGroup" destination="ypm-C5-bEc" id="niO-9c-Xj0"/>
+                        <outlet property="pauseButton" destination="VTl-JL-4GL" id="RZM-67-GXS"/>
+                        <outlet property="speedUpLabel" destination="CdW-Wo-oQb" id="4CI-h2-NYA"/>
+                        <outlet property="stepLabel" destination="Zrs-BG-qy1" id="BKB-2k-13J"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="117.69230769230769" y="558.38461538461547"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="mub-Lz-y1Y">
+            <objects>
+                <controller identifier="settings" title="Settings" id="GDX-30-Ae9" customClass="settingsInterfaceController" customModule="Pulse_Run_WatchKit_Extension">
+                    <items>
+                        <group width="1" height="10" alignment="left" id="9P0-zX-dM0"/>
+                        <group width="1" alignment="left" id="aH1-YP-C6h">
+                            <items>
+                                <imageView alignment="left" verticalAlignment="center" image="heart" catalog="system" id="lk7-GE-gMS">
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </imageView>
+                                <label alignment="left" verticalAlignment="center" text="HMax" id="0PL-Fg-f3j">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                                </label>
+                                <label alignment="left" verticalAlignment="center" text="180" id="vDE-5o-ac2"/>
+                            </items>
+                        </group>
+                        <button width="0.69999999999999996" alignment="center" title="Set" id="UaP-98-F3v">
+                            <color key="backgroundColor" red="0.36078431370000003" green="0.53333333329999999" blue="0.85490196080000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="setHMaxButtonTapped" destination="GDX-30-Ae9" id="dp5-5x-l49"/>
+                            </connections>
+                        </button>
+                        <group width="1" height="10" alignment="left" id="qAU-be-VYz"/>
+                        <group width="1" alignment="left" id="7QV-SC-wbE">
+                            <items>
+                                <imageView width="20" height="20" alignment="left" verticalAlignment="center" image="map" catalog="system" id="Ooa-io-kVF">
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </imageView>
+                                <label alignment="left" text="Units" id="9Tu-mz-v3f">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                                </label>
+                            </items>
+                        </group>
+                        <button width="0.69999999999999996" alignment="center" verticalAlignment="center" title="Miles" id="PO6-4w-WhD">
+                            <color key="backgroundColor" red="0.36078431370000003" green="0.53333333329999999" blue="0.85490196080000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="distanceButtonTapped" destination="GDX-30-Ae9" id="wdC-yu-t55"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="HMaxLabel" destination="vDE-5o-ac2" id="LXu-jo-DWw"/>
+                        <outlet property="distanceButton" destination="PO6-4w-WhD" id="rR6-ZF-Xtc"/>
+                        <outlet property="setHMaxButton" destination="UaP-98-F3v" id="HrY-Mo-HcR"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="118" y="-253"/>
+        </scene>
+        <!--cancel-->
+        <scene sceneID="PJR-LP-hoh">
+            <objects>
+                <controller identifier="noHMax" title="cancel" id="teK-nh-ggY" customClass="noHMaxInterfaceController" customModule="Pulse_Run_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" id="Fld-WP-bkN">
+                            <items>
+                                <imageView alignment="left" image="lightbulb" catalog="system" id="LPK-9G-l6o">
+                                    <color key="tintColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="0.65539383559999997" colorSpace="custom" customColorSpace="sRGB"/>
+                                </imageView>
+                                <label alignment="left" text="HMax missing" id="5Xz-GJ-fxu">
+                                    <color key="textColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="0.65539383559999997" colorSpace="custom" customColorSpace="sRGB"/>
+                                </label>
+                            </items>
+                        </group>
+                        <label alignment="left" text="You need to set your maximum heart rate (HMax), before you can start a run." numberOfLines="7" id="USB-fJ-kYd"/>
+                        <button alignment="center" verticalAlignment="bottom" title="set HMax" id="6Uj-qa-D2R" userLabel="settingsButton">
+                            <color key="backgroundColor" red="0.36078431370000003" green="0.53333333329999999" blue="0.85490196080000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="backButtonTapped" destination="teK-nh-ggY" id="POc-ZD-je2"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="backButton" destination="6Uj-qa-D2R" id="9rA-mI-Zr3"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="599" y="-286"/>
+        </scene>
+        <!--HMax methods-->
+        <scene sceneID="GeG-vh-iMk">
+            <objects>
+                <controller identifier="setHMax" title="HMax methods" id="hoq-Gp-qdI">
+                    <items>
+                        <group width="1" alignment="left" layout="overlap" id="C8F-iA-8oP">
+                            <items>
+                                <imageView alignment="right" image="info.circle" catalog="system" id="NMR-i5-fJl">
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </imageView>
+                                <button width="51" height="25" alignment="right" id="jcX-Cm-bEM">
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <connections>
+                                        <segue destination="Dme-ne-Lwe" kind="modal" id="bAV-BV-2OV"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" height="0.29999999999999999" alignment="left" layout="vertical" id="lhy-yE-kAU">
+                            <items>
+                                <group width="1" height="0.80000000000000004" alignment="left" verticalAlignment="center" id="Bke-fy-4q6">
+                                    <items>
+                                        <label alignment="left" verticalAlignment="center" text="Rough" id="TZa-RY-ukc">
+                                            <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
+                                        </label>
+                                        <button width="0.59999999999999998" height="35" alignment="right" verticalAlignment="center" title="calculate" id="rzd-oi-hlo">
+                                            <color key="backgroundColor" red="0.36078431370000003" green="0.53333333329999999" blue="0.85490196080000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <variation key="device=watch38mm">
+                                                <fontDescription key="font" type="system" pointSize="14"/>
+                                            </variation>
+                                            <connections>
+                                                <segue destination="E5c-rP-W7t" kind="push" id="bzg-pZ-yVE"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                        <group width="1" height="0.29999999999999999" alignment="left" verticalAlignment="bottom" layout="vertical" id="gfv-19-gaU">
+                            <items>
+                                <group width="1" height="0.80000000000000004" alignment="left" verticalAlignment="center" id="3Cx-Ow-sGu">
+                                    <items>
+                                        <label alignment="left" verticalAlignment="center" text="Manual" id="qKy-vo-GF6">
+                                            <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
+                                        </label>
+                                        <button width="0.59999999999999998" height="35" alignment="right" verticalAlignment="center" title="set" id="eXP-rr-Tje">
+                                            <color key="backgroundColor" red="0.36078431370000003" green="0.53333333329999999" blue="0.85490196080000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <variation key="device=watch38mm">
+                                                <fontDescription key="font" type="system" pointSize="14"/>
+                                            </variation>
+                                            <connections>
+                                                <segue destination="zSx-nN-yHO" kind="push" id="6GZ-Mt-Vr9"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                        <group width="1" height="0.29999999999999999" alignment="left" id="cEk-bS-Aaz">
+                            <items>
+                                <group width="1" height="0.80000000000000004" alignment="left" verticalAlignment="center" id="wm2-Os-TpA">
+                                    <items>
+                                        <label alignment="left" verticalAlignment="center" text="Precise" id="uWF-1e-TjC">
+                                            <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
+                                        </label>
+                                        <button width="0.59999999999999998" height="35" alignment="right" verticalAlignment="center" title="training" id="e4u-G8-osb">
+                                            <color key="backgroundColor" red="0.36078431370000003" green="0.53333333329999999" blue="0.85490196080000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <variation key="device=watch38mm">
+                                                <fontDescription key="font" type="system" pointSize="14"/>
+                                            </variation>
+                                            <connections>
+                                                <segue destination="ZHv-Uz-cCS" kind="push" id="Cca-fh-NrU"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="599" y="133"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="XfK-OB-YgQ">
+            <objects>
+                <controller id="tH4-fN-H20">
+                    <items>
+                        <label alignment="left" text="endurance" id="rNH-H5-5up">
+                            <color key="textColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </label>
+                        <label alignment="left" numberOfLines="15" id="0WK-z5-bSv">
+                            <string key="text">This mode is great to prepare you for a marathon: It helps you to improve your endurance. For best results your Apple Watch will try to keep your heart rate between 70% and 80% of your HMax.</string>
+                        </label>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="434" y="487"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="CKw-sS-HKM">
+            <objects>
+                <controller id="nYZ-zF-OHD">
+                    <items>
+                        <label alignment="left" text="balance" id="sfU-Ig-Kqs">
+                            <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </label>
+                        <label alignment="left" text="This mode is great for your daily runs. It keeps you balanced at a minimum heart rate of 80 % and a maximum heart rate of 90 %." numberOfLines="11" id="HaM-ST-fxL"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="674" y="487"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="Ibw-P8-FoB">
+            <objects>
+                <controller id="AZh-h8-Bks">
+                    <items>
+                        <label alignment="left" text="speed" id="E6O-FI-5Th">
+                            <color key="textColor" red="0.85666519399999996" green="0.2222842276" blue="0.43137753010000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </label>
+                        <label alignment="left" numberOfLines="12" id="bPk-iI-LRC">
+                            <string key="text">This mode is great if you want to improve your overall speed. Your Apple Watch will try to push you above 90 % of your maximum heart rate.</string>
+                        </label>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="919" y="487"/>
+        </scene>
+        <!--cancel-->
+        <scene sceneID="tob-MN-HKb">
+            <objects>
+                <controller identifier="HMaxDescription" title="cancel" id="Dme-ne-Lwe" customClass="HMaxDescriptionInterfaceController" customModule="Pulse_Run_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" id="PaD-oQ-7VR">
+                            <items>
+                                <imageView alignment="left" image="lightbulb" catalog="system" id="396-dF-3hB">
+                                    <color key="tintColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="0.65539383559999997" colorSpace="custom" customColorSpace="sRGB"/>
+                                </imageView>
+                                <label alignment="left" text="Methods" id="DkC-E9-awv">
+                                    <color key="textColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="0.65539383559999997" colorSpace="custom" customColorSpace="sRGB"/>
+                                </label>
+                            </items>
+                        </group>
+                        <label alignment="left" text="Rough calculation" id="U4I-4L-8SG">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </label>
+                        <label alignment="left" text="This method approximates your maximum heart rate (HMax) depending on your gender and age." textAlignment="left" numberOfLines="7" id="lkc-AW-BjO">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                        </label>
+                        <separator alignment="left" id="Rtw-6Q-oLW"/>
+                        <label alignment="left" text="Precise training" id="eoF-bA-yNC"/>
+                        <label alignment="left" text="Your maximum heart rate (HMax) will be detemined by training." textAlignment="left" numberOfLines="7" id="k95-SP-ZEb">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                        </label>
+                        <separator alignment="left" id="IZM-8u-cha"/>
+                        <label alignment="left" text="Manual set" id="EQg-Jq-w0N"/>
+                        <label alignment="left" text="Set your HMax manually, if you already know the value." textAlignment="left" numberOfLines="7" id="cye-q2-DGu">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                        </label>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="908" y="-286"/>
+        </scene>
+        <!--roughHMax-->
+        <scene sceneID="6gK-eJ-IQ6">
+            <objects>
+                <controller identifier="roughHMax" id="E5c-rP-W7t" customClass="roughHMaxInterfaceController" customModule="Pulse_Run_WatchKit_Extension">
+                    <items>
+                        <group width="1" height="0.34999999999999998" alignment="left" id="8tt-zd-v5J">
+                            <items>
+                                <picker width="0.68999999999999995" height="0.75" alignment="right" verticalAlignment="center" focusStyle="stack" id="BBv-cw-WMW">
+                                    <connections>
+                                        <action selector="sexPickerChanged:" destination="E5c-rP-W7t" id="icB-vP-Jcq"/>
+                                    </connections>
+                                </picker>
+                                <imageView alignment="left" verticalAlignment="center" image="person.fill" catalog="system" id="0kS-8z-eVp">
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </imageView>
+                                <label alignment="left" verticalAlignment="center" text="Sex" id="06Y-Dg-VkP">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" height="0.34999999999999998" alignment="left" id="ikx-BS-A4r">
+                            <items>
+                                <imageView alignment="left" verticalAlignment="center" image="number" catalog="system" id="Cvs-kN-XuN">
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </imageView>
+                                <label alignment="left" verticalAlignment="center" text="Age" id="yb5-6e-GFI">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                </label>
+                                <picker width="0.68999999999999995" height="0.75" alignment="right" verticalAlignment="center" focusStyle="stack" id="5qm-vS-pHQ">
+                                    <connections>
+                                        <action selector="agePickerChanged:" destination="E5c-rP-W7t" id="A6B-oB-VoO"/>
+                                    </connections>
+                                </picker>
+                            </items>
+                        </group>
+                        <group width="1" height="0.34999999999999998" alignment="left" id="wX5-HZ-hKD">
+                            <items>
+                                <button width="0.68999999999999995" height="35" alignment="center" verticalAlignment="center" title="save" id="vRZ-9S-4hA">
+                                    <color key="backgroundColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <connections>
+                                        <action selector="doneButtonTapped" destination="E5c-rP-W7t" id="HLN-P4-vH9"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="agePicker" destination="5qm-vS-pHQ" id="goK-wK-SeI"/>
+                        <outlet property="doneButton" destination="vRZ-9S-4hA" id="TYP-L6-0Ta"/>
+                        <outlet property="sexPicker" destination="BBv-cw-WMW" id="vr4-xC-ifh"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="908" y="137"/>
+        </scene>
+        <!--preciseHMax-->
+        <scene sceneID="pNZ-D7-Gt4">
+            <objects>
+                <controller identifier="preciseHMax" fullScreen="YES" id="ZHv-Uz-cCS" customClass="preciseInterfaceController" customModule="Pulse_Run_WatchKit_Extension">
+                    <items>
+                        <group width="1" height="0.10000000000000001" alignment="left" id="Gte-O7-e8h"/>
+                        <group width="1" alignment="left" id="c1w-6v-v6E">
+                            <items>
+                                <group width="0.5" alignment="left" id="Mc0-Vp-sxz">
+                                    <items>
+                                        <imageView width="15" height="15" alignment="left" verticalAlignment="center" image="heart" catalog="system" id="qG9-ox-9zb">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <variation key="device=watch38mm" height="10" hidden="NO" width="10"/>
+                                            <variation key="device=watch42mm" height="11" width="11"/>
+                                        </imageView>
+                                        <label alignment="left" text="HMax" id="nRM-hx-Ja5">
+                                            <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                            <variation key="device=watch38mm">
+                                                <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                            </variation>
+                                            <variation key="device=watch42mm">
+                                                <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                            </variation>
+                                        </label>
+                                        <label alignment="left" text="---" id="3l4-NC-ByY">
+                                            <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                            <variation key="device=watch38mm">
+                                                <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                            </variation>
+                                            <variation key="device=watch42mm">
+                                                <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                            </variation>
+                                        </label>
+                                    </items>
+                                </group>
+                                <group width="0.5" alignment="left" id="vpU-oI-zbE">
+                                    <items>
+                                        <imageView width="15" height="15" alignment="right" verticalAlignment="center" image="heart.fill" catalog="system" id="ULh-5N-qq8">
+                                            <color key="tintColor" red="0.79741126299999998" green="0.078062273560000006" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <variation key="device=watch38mm" height="10" hidden="NO" width="10"/>
+                                            <variation key="device=watch42mm" height="11" width="11"/>
+                                        </imageView>
+                                        <label alignment="right" text="BPM" id="cWQ-Vs-CIy">
+                                            <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                            <variation key="device=watch38mm">
+                                                <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                            </variation>
+                                            <variation key="device=watch42mm">
+                                                <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                            </variation>
+                                        </label>
+                                        <label alignment="right" text="---" id="mR5-fm-fbi">
+                                            <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                            <variation key="device=watch38mm">
+                                                <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                            </variation>
+                                            <variation key="device=watch42mm">
+                                                <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                            </variation>
+                                        </label>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="0Qk-YN-Ee6">
+                            <items>
+                                <label alignment="center" verticalAlignment="bottom" text="calibrating" textAlignment="center" numberOfLines="3" id="mu8-Xn-OgJ">
+                                    <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group height="0.40000000000000002" alignment="left" layout="vertical" id="mkl-vz-9fb">
+                            <items>
+                                <imageView alignment="left" id="7rD-7M-TZj"/>
+                            </items>
+                        </group>
+                        <group width="136" alignment="center" verticalAlignment="bottom" id="gTb-OX-NdA">
+                            <items>
+                                <button width="0.5" height="35" alignment="left" title="back" id="0zF-4m-zKJ">
+                                    <color key="backgroundColor" red="0.85490196080000003" green="0.19215686269999999" blue="0.3411764706" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <variation key="device=watch40mm" height="35"/>
+                                    <connections>
+                                        <action selector="backButtonTapped" destination="ZHv-Uz-cCS" id="71A-s2-ICY"/>
+                                    </connections>
+                                </button>
+                                <button width="0.5" height="35" alignment="center" title="start" id="gGb-cb-nxt">
+                                    <color key="backgroundColor" red="0.36078431370000003" green="0.53333333329999999" blue="0.85490196080000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <connections>
+                                        <action selector="startButtonTapped" destination="ZHv-Uz-cCS" id="Pgk-Qn-WmH"/>
+                                    </connections>
+                                </button>
+                                <button height="35" alignment="center" hidden="YES" title="save HMax" id="oDr-tf-ZZJ">
+                                    <color key="backgroundColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <connections>
+                                        <action selector="saveHMaxButtonTapped" destination="ZHv-Uz-cCS" id="rs9-ca-SNK"/>
+                                    </connections>
+                                </button>
+                                <timer alignment="right" verticalAlignment="center" hidden="YES" textAlignment="center" enabled="YES" format="abbreviated" previewedSeconds="90" id="cV3-Xm-jha">
+                                    <calendarUnit key="units" second="YES"/>
+                                </timer>
+                                <label alignment="right" verticalAlignment="center" text=" " id="Wtf-7p-ThF"/>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="BPMGraph" destination="7rD-7M-TZj" id="kSk-df-L8A"/>
+                        <outlet property="BPMGroup" destination="mkl-vz-9fb" id="lru-LL-xhN"/>
+                        <outlet property="BPMLabel" destination="mR5-fm-fbi" id="Ymz-Cx-VMV"/>
+                        <outlet property="HMaxLabel" destination="3l4-NC-ByY" id="rWJ-b6-lMJ"/>
+                        <outlet property="appleTimer" destination="cV3-Xm-jha" id="0wZ-bh-5ej"/>
+                        <outlet property="backButton" destination="0zF-4m-zKJ" id="904-gK-4d2"/>
+                        <outlet property="calibratingLabel" destination="mu8-Xn-OgJ" id="3ib-EQ-b7L"/>
+                        <outlet property="saveHMaxButton" destination="oDr-tf-ZZJ" id="i3d-Na-KYc"/>
+                        <outlet property="startButton" destination="gGb-cb-nxt" id="QuZ-zt-t81"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1129" y="133"/>
+        </scene>
+        <!--manualHMax-->
+        <scene sceneID="4Dp-tn-DTH">
+            <objects>
+                <controller identifier="manualHMax" id="zSx-nN-yHO" customClass="manualHMaxInterfaceController" customModule="Pulse_Run_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" id="ypo-uJ-jv4">
+                            <items>
+                                <imageView alignment="left" verticalAlignment="center" image="heart" catalog="system" id="Vci-N2-Df2">
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </imageView>
+                                <label alignment="left" verticalAlignment="center" text="HMax" id="e2a-rc-62b">
+                                    <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" height="0.5" alignment="left" id="Vx6-fD-UWd">
+                            <items>
+                                <picker height="1" alignment="left" id="sUs-o1-OOq">
+                                    <connections>
+                                        <action selector="hmaxPickerChanged:" destination="zSx-nN-yHO" id="fQB-3S-DcO"/>
+                                    </connections>
+                                </picker>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="bXI-zW-ezm">
+                            <items>
+                                <button width="1" height="35" alignment="left" title="save" id="vgh-J7-cbC">
+                                    <color key="backgroundColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <connections>
+                                        <action selector="saveButtonTapped" destination="zSx-nN-yHO" id="HSn-on-qMe"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="hmaxPicker" destination="sUs-o1-OOq" id="pBw-FD-l0Y"/>
+                        <outlet property="saveButton" destination="vgh-J7-cbC" id="Wu5-nf-A8i"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1339" y="133"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow.down.to.line" catalog="system" width="64" height="64"/>
+        <image name="arrow.up" catalog="system" width="60" height="64"/>
+        <image name="arrow.up.to.line" catalog="system" width="64" height="64"/>
+        <image name="calories" width="240" height="240"/>
+        <image name="gear" catalog="system" width="64" height="58"/>
+        <image name="heart" catalog="system" width="64" height="52"/>
+        <image name="heart.fill" catalog="system" width="64" height="52"/>
+        <image name="info.circle" catalog="system" width="64" height="60"/>
+        <image name="lightbulb" catalog="system" width="56" height="64"/>
+        <image name="logo" width="150" height="74.5"/>
+        <image name="map" catalog="system" width="64" height="56"/>
+        <image name="number" catalog="system" width="64" height="60"/>
+        <image name="person.fill" catalog="system" width="64" height="60"/>
+        <image name="steps" width="515" height="515"/>
+    </resources>
+</document>

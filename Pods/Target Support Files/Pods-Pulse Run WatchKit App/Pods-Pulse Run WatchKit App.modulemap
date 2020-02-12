@@ -1,0 +1,6 @@
+framework module Pods_Pulse_Run_WatchKit_App {
+  umbrella header "Pods-Pulse Run WatchKit App-umbrella.h"
+
+  export *
+  module * { export * }
+}
